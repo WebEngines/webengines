@@ -1,0 +1,1190 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 10px;
+    align-self: center;
+    align-content: center;   
+}
+
+
+body{
+    background-color: #EEF0F1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: auto;
+}
+
+a,li,h1,h2,p{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header{
+    position: sticky;
+    z-index: 10000;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color:white;
+    display: flex;
+
+}
+
+.logo{
+    color: black;
+    align-self: center;
+    margin: 5px;
+    padding: 10px 10px;
+}
+
+.searching{
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 80%;
+    align-self: center;
+    padding: 10px 10px;
+
+}
+
+.humburger{
+    align-self: center;
+    color: black;
+    padding: 10px 10px;
+}
+
+.cancel-btn{
+    display: none;
+    color: black;
+}
+
+.menu-btn{
+    align-self: center;
+    color: black;
+}
+
+nav{
+    display: none;
+}
+
+.center{
+    width: 100%;
+    grid-column: span 12;
+}
+.postmenu{
+    display: flex;
+    padding: 10px 25px;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color:#EEF0F1;
+}
+
+.title{
+    color: black;
+}
+
+.option{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+}
+
+.rightbar{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    text-align: end;
+}
+
+.sel-box{
+    position: relative;;
+    
+}
+
+#select{
+    display:block;
+    width: 100px;
+    height:20px;
+    border:1px solid #999;
+    padding:5px;
+    justify-content: flex-end;
+    color: black;
+}
+    
+
+.toc-odd{
+    position:absolute;
+    top:32px;
+    background:#f1f1f1;
+    color: black;
+    width:120px;
+    display:none;
+}
+.toc-odd li{
+    padding:5px 10px;
+    border-bottom:1px solid #999;
+    color: black;
+}
+
+.toc-odd li a{
+    padding:5px 10px;
+    border-bottom:1px solid #999;
+    color: black;
+}
+
+
+.stories{
+    height: auto;
+}
+
+/* post styling*/
+.post{
+    border-bottom: 1px solid grey;
+    border-top: 1px solid grey;
+    color: black;
+    background-color: white;
+}
+
+.postviews{
+    padding: 5px 20px;
+    margin: 10px;
+}
+
+.save{
+    grid-column: 11/13;
+    background-color: white;
+    align-self: center;
+}
+
+
+.like{
+    grid-column: span 2;
+    background-color: white;
+    align-self: center;
+}
+
+.comment{
+    grid-column: span 2;
+    background-color: white;
+    align-self: center;
+}
+
+.readtime{
+    grid-column: 7/11;
+    background-color: white;
+    align-self: center;
+}
+
+.save {
+    font-size: 18px;
+    text-align: center;
+    text-align: center;
+}
+
+.leading{
+    display: none;
+}
+
+.save a{
+    font-size: 18px;
+    text-align: center;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: blue;
+    color: white;
+}
+
+.like a, .comment a , .readtime a{
+    grid-column: span 3;
+    color: black;
+}
+
+.like i, .comment i , .readtime i{
+    grid-column: span 3;
+}
+
+.postimage{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    margin-top: 2px;
+}
+
+.userpic{
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    background-color: black;
+    margin:  0px 10px;
+}
+
+.postedby{
+    display: flex;
+    margin: 10px 5px;
+}
+
+.postdetails{
+    margin-left: 70px;
+}
+
+.posttitle{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.username{
+    color: black;
+    margin-top: 5px;
+} 
+
+.date{
+    color: darkgray;
+}
+.mobnav{
+    position: fixed;
+    top: 70px;
+    z-index: 100;
+    left: -100%;
+    border: 2px solid white;
+    background-color: red;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.leftside {
+    position: fixed;
+    overflow: hidden;
+    top: 100px;
+    z-index: 100;
+    width: 70%;
+    padding: 10px 20px;
+    display: grid;
+    background-color: white;
+    height: 200vh;
+    margin-top: 30px;
+    padding-top: 30px;
+    grid-template-columns: 3fr 1fr;
+    transition: all 0.3s ease-in-out;
+    left: -200%;
+}
+
+.log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin: 10px auto;
+}
+
+.fa-times{
+    padding: 20px;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    margin: 10px;
+}
+
+.links a{
+    padding: 10px 10px;
+    font-weight: bolder;
+    color: black;
+    font-size: 20px;
+}
+.links .more{
+    color: gray;
+}
+
+.smallpic{
+    width: 45px;
+    height: auto;
+}
+
+.left-side{
+    grid-column: span 1;
+    padding: 10px 5px;
+}
+
+.off{
+    height: auto;
+    display: block;
+}
+
+.onn{
+    display: none;
+}
+
+.rightside{
+    position: fixed;
+    display: flex;
+    overflow-x: hidden;
+    transition: all 0.3s ease-in-out;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin: 10px 20px;
+    background-color: #EEF0F1;
+    width: 90%;
+    height: 100vh;
+    right: -100%;
+    top: 14%;
+}
+
+.tabnav{
+    display: none;
+}
+
+.signupblock{
+    margin: 10px auto;
+}
+
+.adsAndChallenges{
+    margin: 10px auto 150px auto;  
+}
+
+
+.sidebar-left{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    grid-column: span 12;
+    grid-row: 4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: blue;
+    padding: 10px;
+    width: 100%;
+}
+
+.sidebar-right{
+    grid-column: span 12;
+    grid-row: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.blogs{
+    grid-column: span 12;
+    grid-row: 1;
+}
+
+.blogimage{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.title{
+    text-align: center;
+    margin: 0px 0px 0px 0;
+}
+
+.tagsUsed{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tags{
+    padding: 10px 20px;
+    color: white;
+    background-color: thistle;
+}
+
+.bloggerdetails{
+    display: grid;
+    grid-template-columns: repeat(12 , 1fr);
+    gap: 10px;
+    background-color: white;
+    margin: 10px;
+}
+
+.bloggerimage , .icons{
+    width: 50px;
+    background-color: black;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px;
+    grid-column: 1/4;
+}
+
+.data{
+    grid-column: 4/13;
+}
+
+.blogername{
+    margin: 20px auto 0px auto;
+    font-weight: bolder;
+}
+
+.reaction{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.reaction h4{
+    padding: 10px 10px;
+    font-size: 20px;
+    color: white;
+}  
+
+.smallpics{
+    width: 25px;
+}
+
+.smallpicture{
+    width: 35px;
+}
+
+.blogdateAndsource{
+    text-align: center;
+    margin: 20px 10px;
+    background-color: teal;
+    padding: 10px 10px;
+}
+
+.caution{
+    padding: 10px 10px;
+    margin: 10px 10px;
+    background-color: thistle;
+}
+
+.blogstart{
+    background-color: aliceblue;
+    margin: 20px 0px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.blogstart h1{
+    text-align: left;
+    border-bottom:3px solid blue;
+    margin: 10px;
+    text-align: justify;
+}
+
+.blogstart p{
+    margin: 10px 20px;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+.discuss{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 10px;
+    background-color: white;
+    padding: 10px 20px;
+    
+}
+
+.commentSection{
+    grid-column: span 12;
+    grid-row: 3;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+.disscusion{
+    grid-column: 1/4;
+    padding: 10px 10px;
+    font-size: 25px;   
+}
+
+.login{
+    display: flex;
+    grid-column: 4/13;
+    padding: 10px 15px;
+    justify-self: flex-end;
+    background-color: turquoise;
+    color: white;
+    align-items: center;
+    margin: 10px;
+}
+
+.shortlogo{
+    background-color: black;
+    color: white;
+    width:70px;
+    padding: 10px 10px;
+    height: 50px;
+    align-self: center;
+    margin: 10px auto;
+    justify-content: space-around;
+    grid-column: 1/4;
+    grid-row: 2;
+    font-size: 20px;
+    align-self: center;
+    justify-content: center;
+}
+
+.addcomment{
+    grid-column: 4/13;
+    grid-row: 2;
+    margin: 10px 10px;
+    height: 100px;
+    border: 2px solid gray;
+    width: auto;
+}
+
+.previousComment{
+    padding: 10px 20px;
+    margin: 10px auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.previousComment p{
+    margin: 10px;
+    text-align: justify;
+    background-color: white;
+    padding: 10px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+}
+
+.commenter{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: black;    
+}
+
+
+.mainContent{
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    grid-column: span 12;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.signupblocks{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 20px;
+}
+
+.Google{
+    padding: 10px 20px;
+    background-color: #1DA1F2;
+    margin: 10px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.facebook{
+    padding: 10px 20px;
+    background-color: #4267B2;
+    margin: 10px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.twiter{
+    padding: 10px 20px;
+    background-color: #4285F4;
+    margin: 10px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.github{
+    padding: 10px 20px;
+    background-color:#333;
+    margin: 10px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+.loginblock{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: justify;
+}
+
+.loginblock input{
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.loginblock label{
+    margin: 0px 10px;
+    font-weight: 800;
+}
+
+button{
+    padding: 12px 20px;
+    background-color:#333;
+    margin: 10px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+hr , .Separator{
+    margin: 20px;
+}
+
+.greeting{
+    font-size: 18px;
+    margin: 20px;
+}
+
+
+
+@media screen and (min-width: 640px) {
+  
+    header{
+        display: flex;
+        color: black;
+        background-color:#1A2634;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        display: block;
+    }
+
+    .navlinks{
+        display: flex;
+    }
+
+    .searching{
+        width: 25%;
+    }
+
+    .humburger{
+        display: none;
+    }
+
+        
+    .Signup{
+        padding: 8px 7px;
+        background-color: #5855F3;
+        border-radius: 5px;
+        text-decoration: none;
+        list-style: none;
+        border: 1px solid white;
+        display: inline-block;
+        font-weight: bolder;  
+    }
+
+    .login{
+        padding: 8px 7px;
+        border-radius: 10px;
+        text-decoration: none;
+        list-style: none;
+        display: inline-block;
+        font-weight: bolder;
+        color: white;  
+    }
+
+    .Signup a{
+        text-decoration: none;
+        align-items: center;
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .Signup:hover{
+        background-color: blue;
+        padding: auto;
+
+    }
+
+    .Signup a:hover{
+        color: white;
+    }
+
+    .login a{
+        text-decoration: none;
+        align-items: center;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .mobnav{
+        display: none;
+    }
+
+    .login a:hover{
+        padding: 8px 7px;
+        background-color: beige;
+        text-decoration: none;
+        align-items: center;
+        font-weight: bolder;
+        color: black;
+        border-radius: 10px;
+    }
+
+        
+    .rightside{
+        top: 20%;
+    }
+
+    .postviews div a{
+        display: flex;
+    }
+
+    .leading{
+        display: block;
+        margin: auto 5px;
+    }
+    
+    .like{
+        grid-column: 1/4;
+        background-color: white;
+        align-self: center;
+    }
+
+
+    .comment{
+        grid-column: 4/7;
+        background-color: white;
+        align-self: center;
+    }
+
+    .postviews div a i{
+        margin: 1px 3px;
+    }
+
+    .log{
+        width: 100%;
+    }
+
+    .readtime{
+        grid-column: 8/11;
+        background-color: white;
+        align-self: center;
+    }
+
+    .save {
+        grid-column: 11/13;
+        font-size: 18px;
+    }
+
+    .save a{
+        font-size: 16px;
+        align-content: center;
+        justify-content: space-around;
+        text-align: center;
+        background-color: blue;
+        color: white;
+    }
+
+    .postmenu{
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+    }
+
+    .tabnav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    }
+
+    .tabnav a{
+        display: inline-block;
+        padding: 5px 8px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .tabnav a:hover{
+        padding: 5px 8px;
+        background-color: aquamarine;
+    }
+
+    .sel-box{
+        display: none;
+    }
+
+    .post{
+        margin: 10px;
+        border: 1px solid gray;
+        border-radius: 10px;
+    }
+   
+}
+
+@media screen and (min-width: 790px) {
+        
+    .leftside {
+        position: fixed;
+        display: grid;
+        grid-column: span 3;
+        left: 0%;
+        width: 20%;
+        overflow-y: hidden;
+        top:5%;
+    } 
+
+    .searching{
+        width: 80%;
+        max-width: 300px;
+    }
+
+
+    .close-btn{
+        display: none;
+    }
+
+    .smallpic{
+        width: 45px;
+        height: auto;
+        margin: 10px;
+    }
+
+    .center{
+        grid-column: 4/13;
+    }
+
+    .post{
+        border: 1px solid gray;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 5px 0px;
+    }
+
+    .left-side{
+        display: none;
+    }
+
+        
+    .links a{
+        padding: 10px 10px;
+        font-weight: bolder;
+        color: black;
+        font-size: 16px;
+    } 
+    .smallpic{
+        width: 25px;
+        height: auto;
+    }
+
+    .sidebarLinks{
+        grid-column: span 4;
+    }
+        
+    .rightside{
+        width: 50%;
+        height: 100vh;
+        right: -100%;
+        top: 17%;
+    }
+
+    .sidebar-left{
+        position: fixed;
+        grid-column: 1/2;
+        padding: 20px;
+        top: 55px;
+        display: grid;
+        flex-direction: row;
+        grid-row: 1/4;
+        overflow-y: hidden;
+        grid-template-rows: repeat(6,1fr); 
+        height: 100%;
+        z-index: 1;
+        padding-top: 10px;
+        width: 5%;
+    }
+        
+    .blogs{
+        grid-column: 2/13;
+        grid-row: 1;
+        border: 1px solid gray;
+        border-radius:10px;
+        background-color: white;
+        margin: 20px;
+    }
+
+        
+    .blogimage{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        fill: greenyellow;
+    }
+
+        
+    .bloggerimage , .icons{
+        grid-column: 1/2;
+    }
+
+    .data{
+        grid-column: 2/13;
+        margin: 3px;
+    }
+
+    .sidebar-right{
+        grid-column: 2/13;
+        grid-row: 2;
+        border: 1px solid gray;
+        border-radius:10px;
+        background-color: white;
+        margin: 20px;
+        padding: 10px 0px;
+
+    }
+
+    .commentSection{
+        grid-column: 2/13;
+        grid-row: 3;
+        border: 1px solid gray;
+        border-radius:10px;
+        padding: 5px 0px;
+        margin: 20px;
+    }
+
+    input{
+        border-radius: 10px;
+    }
+
+        
+    .addcomment{
+        grid-column: 4/13;
+        grid-row: 2;
+        margin: 10px 10px;
+        height: 100px;
+        border: 2px solid gray;
+        width: auto;
+    }
+
+    .previousComment{
+        padding: 10px 20px;
+        margin: 10px auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1,12fr);
+        border: 1px solid gray;
+        background-color: white;
+        margin: 10px;
+    }
+
+    .previousComment p{
+        grid-column: span 12;
+        grid-row: 2;
+    
+    }
+
+    .commenter{
+        margin-left: 30px;
+        grid-row: 1; 
+    }
+
+    .commentes{
+        grid-column: span 12;
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+    }
+
+    .peoplecomment{
+        grid-column: 7/13;
+        display: flex;
+        color: black;
+        align-self: center;
+        justify-content: space-evenly;
+    }
+
+    .peoplelikes{
+        grid-column: 1/7;
+        display: flex;
+        color: black;
+        align-self: center;
+        justify-content: space-evenly;
+    }
+
+    
+    .ads_left{
+        grid-column: 1/2;
+    }
+
+    .ads_right{
+        grid-column: 12/13;
+    }
+
+    .mainContent{
+        grid-column: 2/12;
+    }
+
+
+
+}
+
+
+@media screen and (min-width: 1024px) {
+        
+    .leftside {
+        position: absolute;
+        display: grid;
+        left: 0%;
+        overflow-y: hidden;
+        top:5%;
+    } 
+
+    .searching{
+        width: 800px;
+    }
+
+
+    .close-btn{
+        display: none;
+    }
+
+    .smallpic{
+        width: 45px;
+        height: auto;
+        margin: 10px;
+    }
+
+    .center{
+        grid-column: 4/10;
+    }
+
+    .post{
+        border: 2px solid gray;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 5px 0px;
+    }
+
+    .left-side{
+        display: none;
+    }
+
+        
+    .links a{
+        padding: 10px 10px;
+        font-weight: bolder;
+        color: black;
+        font-size: 16px;
+    } 
+    .smallpic{
+        width: 25px;
+        height: auto;
+    }
+
+    .sidebarLinks{
+        grid-column: span 4;
+    }
+        
+    .rightside{
+        position: absolute;
+        display: flex;
+        overflow-y: hidden;
+        height: 150vh;
+        right: 0;
+        width: 25%;
+        top: 60px;
+        grid-column: 10/13;
+        margin: 0%;
+        padding: 0%;
+        background-color: white;
+    }
+
+    .rightbar{
+        display: none;
+    }
+        
+    .blogs{
+        grid-column: 2/10;
+        grid-row: 1;
+        border: 1px solid gray;
+        border-radius:10px;
+        background-color: white;
+        margin: 10px;
+    }
+
+        
+    .blogimage{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        fill: greenyellow;
+    }
+
+    .sidebar-right{
+        position: fixed;
+        left: 75%;
+        top: 7.9%;
+        grid-column: 10/13;
+        grid-row: 1;
+        border: none;
+        border-radius:10px;
+        background-color: transparent;
+    }
+
+    .commentSection{
+        grid-column: 2/10;
+        grid-row: 3;
+        border: 1px solid gray;
+        border-radius:10px;
+        padding: 5px 0px;
+        margin: 10px;
+    }
+
+      
+    .bloggerimage , .icons{
+        
+        grid-column: 1/2;
+    }
+
+    .data{
+        grid-column: 2/13;
+        margin: 3px;
+    }
+
+    input{
+        border-radius: 10px;
+    }
+
+        
+    .ads_left{
+        grid-column: 1/3;
+    }
+
+    .ads_right{
+        grid-column: 11/13;
+    }
+
+    .mainContent{
+        grid-column: 3/11;
+    }
+
+
+
+    
+}
+
+
+
+
+
